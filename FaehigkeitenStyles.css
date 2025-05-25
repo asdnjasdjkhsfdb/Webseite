@@ -1,0 +1,379 @@
+.footer-contact .contact-item i{
+  font-size: 1.8rem;  /* Größe der Icons */
+  width: 30px;        /* Gleich breite Spalte für alle Icons */
+  text-align: center;
+}
+.contact-item {
+  display: flex;
+  align-items: center;  /* → Text vertikal zentriert */
+  margin-bottom: 1rem;
+  color: white;
+  gap: 10px; /* Abstand zwischen Icon und Text */
+}
+
+.mehr-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: color 0.2s; 
+}
+
+
+.mehr-link:hover {
+  color:rgb(169, 169, 169); 
+  cursor: pointer; 
+} 
+* { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Inter',sans-serif; background:#000; color:#fff; }
+  a { color:inherit; text-decoration:none; }
+  header { background:#111; border-bottom:1px solid #222; position:sticky; top:0; z-index:1000; }
+  .nav-container { max-width:1200px; margin:auto; display:flex; align-items:center; justify-content:space-between; padding:1rem; }
+  .logo { font-size:1rem; font-weight:800; } 
+  .logo:hover { cursor: pointer;}
+  .nav-links { display:flex; gap:1.5rem; }
+  .nav-links a { font-size:0.85rem; font-weight:600; text-transform:uppercase; display:flex; align-items:center; gap:0.25rem; }
+
+  
+
+  /* Hero */
+  .hero { position:relative; background:url('./Bilder/faehigkeiten.png') center/cover no-repeat; height:50vh; display:flex; align-items:center; }
+  .hero::after { content:''; position:absolute; inset:0;  }
+  .hero-content { position:relative; max-width:800px; padding:0 2rem; }
+  .hero-content h1 { font-size:2.5rem; margin-bottom:1rem; }
+  .hero-content p { font-size:0.95rem; line-height:1.5; opacity:0.9; } 
+
+  /* Main Inhalt inkl. Formular */ 
+  /* Fähigkeiten‑Seite spezifisch */
+/* Gesamt-Container */
+.skills-container {
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section-Titel */
+.skills-container > h2,
+.skills-container h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid #444;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+/* Die Balkenleiste: 3 pro Reihe */
+.skills-bars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Ein einzelnes Balken-Item */
+.skill-bar-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-bar-item span {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Der Balken selbst */
+.skill-bar-item .bar {
+  background: #222;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 12px;
+}
+
+.skill-bar-item .bar-fill {
+  background: #fff;
+  height: 100%;
+  transition: width 0.6s ease;
+}
+
+/* Beschreibungstexte: 3 pro Reihe */
+.skills-desc {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.desc-item h3 {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.desc-item p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* Weitere Skills + Bild: 2-spaltig */
+.other-skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.other-skills h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.other-skills ul {
+  list-style: disc inside;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.skills-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 1024px) {
+  .skills-bars,
+  .skills-desc {
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  }
+  .other-skills-container {
+    grid-template-columns: 1fr;
+  }
+} 
+
+/* Andere Skills – größer und fett */
+.other-skills ul li {
+  font-size: 1.1rem;      /* etwas größer */
+  font-weight: 600;       /* fett */
+  margin-bottom: 0.75rem; /* mehr Abstand zwischen den Punkten */
+}
+
+/* Optional: Gesamt-Text links etwas mehr Abstand zum Bild */
+.other-skills {
+  padding-right: 1rem;
+}
+/* Button unter „Andere Skills“ */
+.skills-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 5.5rem;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  background: transparent;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.3s, color 0.3s;
+  text-decoration: none;
+}
+
+.skills-contact-btn:hover {
+  background: #fff;
+  color: #000;
+} 
+
+
+  /* Footer */
+  footer { border-top:1px solid #444; padding:4rem 1rem; }
+  .footer-container { max-width:1200px; margin:auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:2rem; }
+  .footer-about p { font-size:0.85rem; line-height:1.4; opacity:0.9; }
+  .footer-resources ul { list-style:none; padding:0; }
+  .footer-resources li { margin-bottom:0.5rem; }
+  .footer-resources li:hover {text-decoration: underline; cursor: pointer; }
+  .footer-contact .item { display:flex; align-items:center; margin-bottom:1rem; }
+  .footer-contact .item img { width:28px; filter:invert(1); margin-right:0.75rem; }
+  .footer-contact span, .footer-contact a { font-size:0.9rem; } 
+
+  /* --- Responsive Anpassungen --- */
+  @media (max-width: 992px) {
+    .nav-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-links {
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .right-sidebar {
+      width: 100%;
+      float: none;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .feature {
+      grid-template-columns: 1fr;
+    }
+
+    .hero {
+      height: auto;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .hero-content {
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .footer-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .contact-item {
+      justify-content: center;
+    }
+
+    .feature-text .btn {
+      align-self: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 1.8rem;
+    }
+  }
+  /* Navigation */ 
+  /* Grundlayout */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 1rem;
+  z-index: 999;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.nav-links a:hover {
+  color: #6a6b7d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    background-color: #111;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .nav-links.open {
+    display: block;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links li {
+    margin: 0;
+    border-top: 1px solid #222;
+  }
+
+  .nav-links li:first-child {
+    border-top: none;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+
+  .nav-links a:hover {
+    background-color: #222;
+    color: #6a6b7d;
+  }
+}
+
+/* Kleine Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

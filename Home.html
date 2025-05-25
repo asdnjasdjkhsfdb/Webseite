@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Startseite</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="HomeStyles.css">
+
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo"><a href="Home.html">&lt;SM/&gt;</a></div>
+    <button class="menu-toggle" aria-label="Menü öffnen">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="Home.html"><i class="fas fa-home"></i></a></li>
+        <li>
+          <a href="Faehigkeiten.html">Fähigkeiten <i class="fas fa-caret-down"></i></a>
+        </li>
+        <li>
+          <a href="Portfolio.html">Portfolio <i class="fas fa-caret-down"></i></a>
+        </li>
+        <li>
+          <a href="uebermich.html">Über mich <i class="fas fa-caret-down"></i></a>
+        </li>
+        <li>
+          <a href="Kontakt.html">Kontakt <i class="fas fa-caret-down"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hallo!</h1>
+      <p>Willkommen auf meiner persönlichen Website. Hier findest du Informationen über meine Fähigkeiten, Projekte und alles, was mich beruflich und privat begeistert. Ich möchte meine Leidenschaft für Programmieren und Informatik mit dir teilen und dir einen Einblick in meine bisherigen Arbeiten geben.</p>
+    </div>
+  </section>
+
+  <div class="right-sidebar">
+    <div class="video-section">
+      <h3>Meine Arbeit <i class="fas fa-laptop-code"></i></h3>
+      <div class="video-box">
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/DDyd_knvNPc" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <a href="Portfolio.html" class="mehr-link">Mehr →</a>
+    </div>
+  
+    <div class="ueber-mich-box">
+      <h3>Über Mich <i class="fa-solid fa-solid fa-rocket"></i></h3>
+      <p>Auf meiner „Über mich“-Seite möchte ich mich als leidenschaftlicher Schüler vorstellen, der stets bestrebt ist, sein Wissen zu erweitern und neue Herausforderungen anzunehmen. Ich bin sehr engagiert in meinen Projekten und strebe stets nach persönlicher Weiterentwicklung. Mein Ziel ist es, mit meinen Fähigkeiten und Erfahrungen einen positiven Beitrag in der Berufswelt zu leisten.
+        <br><br>
+      </p>
+      <ul>
+        <li>Ich interessiere mich für Informatik und entwickle gerne kreative Lösungen für technische Herausforderungen.</li>
+         <li>Aktuell mache ich eine Ausbildung als Applikationsentwickler und sammle praktische Erfahrungen in der Softwareentwicklung.</li>
+          <li>In meiner Freizeit interessiere ich mich für Technik, programmiere kleine Projekte und lerne gerne Neues.</li>
+      </ul>
+      <br><br>
+      <p>In meiner Freizeit interessiere ich mich für Technologie, programmiere kleine Projekte und erkunde gerne neue IT-Themen. Ich freue mich darauf, meine Fähigkeiten weiterzuentwickeln und spannende Erfahrungen zu sammeln.
+      <br>
+      </p>
+      <a href="ueber-mich.html" class="mehr-link">Mehr →</a>
+    </div>
+  </div>
+  
+  <section id="portfolio">
+    <h2>Von Meinem Portfolio</h2>
+    <div class="feature">
+      <img src="./Bilder/CSharp.png" alt="TODO-Liste MVC" />
+      <div class="feature-text">
+        <h3 id="SpezialTitel">TODO-Liste (MVC, C#)</h3>
+        <p>Im Rahmen meiner Ausbildung habe ich eine To-Do-Liste als Webanwendung mit ASP.NET Core und dem MVC-Architekturmuster (C#) in Visual Studio entwickelt. Die App ermöglicht es, Aufgaben zu erstellen, zu bearbeiten, als erledigt zu markieren und zu löschen. Die Daten werden in einer SQL-Datenbank mit Entity Framework Core gespeichert.</p>
+        <div class="btn"><i class="fas fa-folder-open"></i> <a href="Portfolio.html">Meine Arbeit</a></div> 
+      </div>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <img src="./Bilder/html1.png" alt="Dynamische Website" />
+        <h4>Dynamische HTML/CSS-Website</h4>
+        <p>Um meine Webentwicklungskentnisse zu verbessern, habe ich eine kleine Website mit HTML, CSS und JavaScript erstellt. Dabei habe ich responsive Designs umgesetzt und einfache Interaktionen mit JavaScript eingebaut.</p>
+      </div>
+      <div class="card">
+        <img src="Bilder/mysql.png" alt="MySQL Datenbank" />
+        <h4>MySQL-Datenbank</h4>
+        <p>In einem internen Schulprojekt habe ich eine MySQL-Datenbank für ein fiktives Unternehmen erstellt. Die Datenbank speichert Kunden- und Bestellinformationen und kann über einfache SQL-Abfragen verwaltet werden.</p>
+      </div>
+      <div class="card">
+        <img src="Bilder/WindowsServer.png" alt="Netzwerk Windows Server" />
+        <h4>Kleines Netzwerk mit Windows Server</h4>
+        <p>Für dieses Projekt habe ich ein kleines Netzwerk mit Windows Server 2022 in einer virtuellen Umgebung aufgesetzt. Ich habe Active Directory konfiguriert und DNS sowie DHCP eingerichtet.</p>
+      </div>
+      <div class="card">
+        <img src="Bilder/Taschenrechner.png" alt="Taschenrechner App" />
+        <h4>Taschenrechner-App in C#</h4>
+        <p>Ich habe eine einfache Taschenrechner-Anwendung mit C# und Windows Forms entwickelt. Sie unterstützt Grundrechenarten und besitzt eine übersichtliche Benutzeroberfläche.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h4>Hier erfährst du mehr über meine Fähigkeiten, Projekte und Leidenschaften im Bereich Programmierung und Informatik.</h4>
+        <br>
+        <p>Willkommen auf meiner persönlichen Website. Hier findest du Informationen über meine Fähigkeiten, Projekte und alles, was mich beruflich und privat begeistert. Ich möchte meine Leidenschaft für Programmieren und Informatik mit dir teilen und dir einen Einblick in meine bisherigen Arbeiten geben.</p>
+      </div>
+      <div class="footer-resources">
+        <h3>Ressourcen</h3>
+        <br>
+        <br>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Faehigkeiten.html">Fähigkeiten</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="uebermich.html">Über Mich</a></li>
+          <li><a href="Kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Kontakt</h3>
+        <br> 
+        <br> 
+        <div class="contact-item"><i class="fas fa-phone fa-3x"></i><span>+41 396 40 59</span></div>
+        <div class="contact-item"><i class="fab fa-instagram fa-3x"></i><a href="https://instagram.com/SandroMeier" target="_blank">@SandroMeier</a></div>
+        <div class="contact-item"><i class="fas fa-envelope fa-3x"></i><a href="mailto:sandro.meier@edu.gbssg.ch">sandro.meier@edu.gbssg.ch</a></div>
+      </div>
+    </div>
+  </footer> 
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+  
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
+    
+</body>
+</html> 
